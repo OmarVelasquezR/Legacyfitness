@@ -1,0 +1,149 @@
+@media (max-width:320px){
+
+    /* Barra de navegacion */
+
+    header{
+        height: 25rem;
+    }
+
+    .header{
+        padding: .625rem 3%;
+    }
+
+    .header .logo img{
+        height: 2.5rem;
+    }
+
+    .header .nav-links{
+        font-size: .9375rem;
+    }
+
+    .header .nav-links li{
+        padding: 0rem .5rem;
+        font-size: .75rem;
+    }
+
+    .header .btn button{
+        font-size: .75rem;
+    }
+
+    /* fondo pagina inicio */
+
+    header .main-title{
+        font-size: 1.25rem;
+        padding: 6%;
+        line-height: 1.25rem;
+        margin-top: 2.5rem;
+    }
+    header .main-title h1{
+        font-size: 1.875rem;
+    }
+
+    header .btn-1 button{
+        font-size: .75rem;
+        margin-top: 1.25rem;
+    }
+
+    /* titulos de pagina */
+
+    header .main-title-2 h1{
+        font-size: 1.875rem;
+        line-height: 1.875rem;
+        margin-top: 4.375rem;
+    }
+
+    header .main-title-2 p{
+        font-size: .75rem;
+        margin-bottom: .3125rem;
+    }
+
+    /* Seccion nuestro enfoque */
+
+    .encabezado h2{
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+    .encabezado p{
+        font-size: .75rem;
+        text-align: center;
+        width: 12.5rem;
+    }
+
+    .container-1{
+        padding: 3.125rem;
+    }
+
+    .enfoques .card-1 p{
+        font-size: .75rem;
+    }
+    
+    /* Seccion entrenamiento personalizado */
+
+    .levels .card-2 img{
+        width: 12.5rem;
+    }
+
+    .levels{
+        gap: 3.75rem;
+    }
+
+    .levels .card-2 h3{
+        font-size: 1.875rem;
+        padding: .625rem;
+    }
+    
+    .levels .card-2 p{
+        text-align: center;
+        width: 12.5rem;
+        font-size: .75rem;
+    }
+    
+    /* seccion nuestra comunidad */
+
+    .comunidad{
+        grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    }
+
+    .card-3{
+        width: 12.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    } 
+    .card-3 h3{
+        text-align: center;
+    }
+
+    .card-3 h3{
+        text-align: center;
+    }
+
+    p{
+        width: 250px;
+        font-size: 3.125rem;
+    }
+
+    /* seccion nuestro equipo */
+
+    .container-4{
+        padding: .625rem;
+    }
+
+    .equipo{
+        grid-template-areas:
+        "x-1"
+        "x-2"
+        "x-3"
+        "x-4"
+        "x-5"
+        "x-6"
+        ;
+        margin-top: 1.875rem;
+    }
+
+    .equipo .card-4{
+        flex-direction: column;
+        width: 12.5rem;
+    }
+
+}

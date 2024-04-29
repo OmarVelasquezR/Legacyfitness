@@ -1,0 +1,38 @@
+/** Fuentes*/
+
+/** font-family: "Jockey One", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+/** font-family: "Prompt", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.paleta-de-colores{
+    color: #000000;
+    color: #171717;
+    color: #D6C59E;
+    color: #F2F0EC;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Jockey One", sans-serif;
+    font-weight: lighter;
+    color: #F2F0EC;
+    /* border: red 1px solid;  */
+}
+
+body{
+    background-image: linear-gradient(133deg, rgba(0,0,0,1) 0%, rgba(52,48,39,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-family: "Arial", sans-serif;
+    font-size: 1rem;
+}

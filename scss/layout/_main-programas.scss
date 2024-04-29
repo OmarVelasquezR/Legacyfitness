@@ -1,0 +1,116 @@
+/* fondo programas */
+
+.background-programas{
+    background: url(../assets/img/fondo_programas.png) no-repeat center; 
+    background-size: cover;
+    width: 100%;
+    height: 56.25rem;
+    align-content: center;
+}
+
+/* seccion nuestros programas */
+
+.container-5{
+    width: 100%;
+    height: 56.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.125rem;
+    .programas{
+        width: 100%;
+        height: 93.75rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6.25rem;
+        .card-5{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 18.75rem;
+            height: 18.75rem;
+            h3{
+                text-align: center;
+                font-size: 2.5rem;
+                color: #D6C59E;
+                padding: .625rem;
+            }
+        }
+    }
+}
+
+/* tu entrenador personal a un clic */
+
+.container-6{
+    height: 50rem;
+    justify-content: center;
+    display: flex;
+    padding: 50px;
+    gap: 12.5rem;
+    .encabezado-2{
+        width:20%;
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 4.375rem;
+            color: #D6C59E;
+            text-align: left;
+            margin-bottom: 1.875rem;
+            line-height: 5rem;
+        }
+        p{
+            font-size: 1.125rem;
+            text-align: left;
+            width: 100%;
+        }
+    }
+    .btn-1 button{
+        margin-top: 3.125rem;
+        font-size: 1.875rem;
+        color: #000000;
+        padding: .3125rem 1.875rem;
+        background: #D6C59E;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: #F2F0EC;
+            transform: scale(1.1);
+        }
+    }
+    .sesiones{
+        width: 37.5rem;
+        height: 37.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+        "x-1 x-2"
+        "x-3 x-4"
+        ;
+        align-items: center;
+        justify-items: center;
+        .card-6{
+            width: 15.625rem;
+            height: 15.625rem;
+            background-color: #171717;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: #D6C59E .3125rem solid;
+            border-color: #D6C59E;
+            h3{
+                text-align: left;
+                font-size: 2.5rem;
+                color:#F2F0EC;
+            }
+            h2{
+                text-align: left;
+                font-size: 2.5rem;
+                color: #D6C59E;
+            }
+        }
+    }
+}

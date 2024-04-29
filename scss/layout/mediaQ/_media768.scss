@@ -1,0 +1,130 @@
+@media (max-width:768px){
+
+    /* Barra de navegacion */
+
+    .nav-wraper nav{
+        width: 100%;
+        position: absolute;
+    }
+
+    .nav-wraper nav .menu{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        top: 0;
+    }
+
+    .nav-wraper nav ul{
+        background-color: #D6C59E;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.25rem;
+    }
+
+    .nav-wraper nav label{
+        display: inline-flex;
+        cursor: pointer;
+    }
+
+    .nav-wraper nav #toggle:checked ~ .menu{
+        height: 100%;
+    }
+
+    .nav-wraper nav{
+        padding: .625rem 3%;
+    }
+
+    .nav-wraper nav .logo img{
+        height: 3.125rem;
+    }
+
+    .nav-wraper .menu ul{
+        font-size: .9375rem;
+    }
+
+    .nav-wraper .menu ul li{
+        padding: 0rem .5rem;
+    }
+
+    .nav-wraper .menu ul li .btn button{
+        margin-left: .5rem;
+        font-size: .9375rem;
+    }
+
+    /* fondo pagina inicio */
+
+    .background-inicio .main-title{
+        padding: 6%;;
+        margin-top: 8.125rem;
+    }
+
+    .background-inicio .main-title h1{
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+
+    .background-inicio .main-title .btn-1 button{
+        font-size: 1.25rem;
+    }
+
+    /* titulos de pagina */
+
+    header .main-title-2 h1{
+        font-size: 5rem;
+        line-height: 4.0625rem;
+        margin-top: 6.25rem;
+    }
+
+    header .main-title-2 p{
+        font-size: 1.25rem;
+    }
+
+    /* Seccion nuestro enfoque */
+
+    .encabezado h2{
+        font-size: 3.75rem;
+    }
+    .encabezado p{
+        font-size: 16px;
+        text-align: center;
+        width: 25rem;
+    }
+    
+    /* Seccion entrenamiento personalizado */
+
+    .levels{
+        gap: 3.75rem;
+    }
+    
+    /* seccion nuestra comunidad */
+
+    .container-3 .comunidad{
+        grid-template-columns: repeat(auto-fill, minmax(15.625rem, 1fr));
+    }
+
+    .card-3{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card-3 p{
+        width: 250px;
+        font-size: .75rem;
+    }
+
+    /* seccion nuestro equipo */
+
+    .equipo{
+        grid-template-areas:
+        "x-1"
+        "x-2"
+        "x-3"
+        "x-4"
+        "x-5"
+        "x-6"
+        ;
+        margin-top: 1.875rem;
+    }
+
+}
