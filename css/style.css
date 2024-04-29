@@ -208,6 +208,9 @@ p {
       .container-3 .comunidad .card-3 img {
         width: 12.5rem;
         height: 12.5rem; }
+        .container-3 .comunidad .card-3 img:hover {
+          transform: scale(1.1);
+          transition: 300ms; }
       .container-3 .comunidad .card-3 h3 {
         font-size: 1.875rem;
         color: #D6C59E; }
@@ -272,6 +275,9 @@ p {
       display: flex;
       gap: 1.25rem;
       flex-direction: row; }
+      .container-4 .equipo .card-4 img:hover {
+        transform: scale(1.1);
+        transition: 300ms; }
       .container-4 .equipo .card-4 h3 {
         text-align: left;
         font-size: 2.5rem;
@@ -306,6 +312,10 @@ p {
       text-align: center; }
       .container-5 .programas .card-5 img {
         width: 100%; }
+        .container-5 .programas .card-5 img:hover {
+          transform: scale(1.1);
+          transition: 300ms;
+          cursor: pointer; }
       .container-5 .programas .card-5 h3 {
         text-align: center;
         font-size: 2.5rem;
@@ -364,6 +374,10 @@ p {
       justify-content: center;
       border: #D6C59E .3125rem solid;
       border-color: #D6C59E; }
+      .container-6 .sesiones .card-6:hover {
+        transform: scale(1.1);
+        transition: 300ms;
+        cursor: pointer; }
       .container-6 .sesiones .card-6 h3 {
         text-align: left;
         font-size: 2.5rem;
@@ -404,6 +418,10 @@ p {
         max-height: 31.25rem;
         /* Altura máxima de la imagen */
         border: 1px solid #D6C59E; }
+        .products .p-section .p-list .p-article img:hover {
+          transform: scale(1.05);
+          transition: 300ms;
+          cursor: pointer; }
       .products .p-section .p-list .p-article h3 {
         color: #D6C59E;
         font-size: 1.25rem; }

@@ -30,6 +30,11 @@
                     height: auto;
                     max-height: 31.25rem; /* Altura máxima de la imagen */
                     border: 1px solid #D6C59E;
+                    &:hover{
+                        transform: scale(1.05);
+                        transition: 300ms;
+                        cursor: pointer;
+                    }
                 }
                 h3{
                     color: #D6C59E;

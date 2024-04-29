@@ -28,6 +28,11 @@
             text-align: center;
             img{
                 width: 100%;
+                &:hover{
+                    transform: scale(1.1);
+                    transition: 300ms;
+                    cursor: pointer;
+                }
             }
             h3{
                 text-align: center;
@@ -100,6 +105,11 @@
             justify-content: center;
             border: #D6C59E .3125rem solid;
             border-color: #D6C59E;
+            &:hover{
+                transform: scale(1.1);
+                transition: 300ms;
+                cursor: pointer;
+            }
             h3{
                 text-align: left;
                 font-size: 2.5rem;
