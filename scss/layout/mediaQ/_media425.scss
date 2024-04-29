@@ -1,4 +1,4 @@
-@media (max-width:320px){
+@media (max-width:425px){
 
     /* Barra de navegacion */
 
@@ -46,14 +46,14 @@
 
     /* titulos de pagina */
 
-    header .main-title-2 h1{
-        font-size: 1.875rem;
-        line-height: 1.875rem;
+    .main-title-2 h1{
+        font-size: 3.125rem;
+        line-height: 3.125rem;
         margin-top: 4.375rem;
     }
 
-    header .main-title-2 p{
-        font-size: .75rem;
+    .main-title-2 p{
+        font-size: 1rem;
         margin-bottom: .3125rem;
     }
 
@@ -104,23 +104,18 @@
         grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
     }
 
-    .card-3{
+    .comunidad .card-3{
         width: 12.5rem;
         display: flex;
         flex-direction: column;
         text-align: center;
     } 
-    .card-3 h3{
+    .comunidad .card-3 h3{
         text-align: center;
     }
 
-    .card-3 h3{
-        text-align: center;
-    }
-
-    p{
-        width: 250px;
-        font-size: 3.125rem;
+    .comunidad .card-3 p{
+        font-size: .75rem;
     }
 
     /* seccion nuestro equipo */
@@ -129,7 +124,7 @@
         padding: .625rem;
     }
 
-    .equipo{
+    .container-4 .equipo{
         grid-template-areas:
         "x-1"
         "x-2"
@@ -139,11 +134,53 @@
         "x-6"
         ;
         margin-top: 1.875rem;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
     }
 
-    .equipo .card-4{
+    .container-4 .equipo .card-4{
+        display: flex;
         flex-direction: column;
         width: 12.5rem;
     }
 
-}
+    .container-4 .equipo .card-4 h3{
+        font-size: 1.25rem;
+    }
+
+    .container-4 .equipo .card-4 p{
+        font-size: .75rem;
+    }
+
+    /* seccion nuestros programas */
+
+    .container-5 .programas{
+        flex-wrap: wrap;
+    }
+
+    .container-5 .programas .card-5 h3{
+        line-height: 1.875rem;
+        font-size: 1.875rem;
+    }
+
+    .container-5 .programas .card-5 p{
+        font-size: 12px;
+    }    
+
+    /* tu entrenador personal a un clic */
+
+    .container-6 .encabezado-2 h2{
+        font-size: 2.5rem ;
+        line-height: 2.5rem;
+    }
+
+    .container-6 .encabezado-2 p{
+        font-size: .75rem;
+    }
+
+    /* seccion contactanos */
+
+    .contactanos form{
+        width: 15.625rem;
+        }
+    }

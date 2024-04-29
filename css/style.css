@@ -24,7 +24,7 @@
   font-family: "Jockey One", sans-serif;
   font-weight: lighter;
   color: #F2F0EC;
-  /* border: red 1px solid;  */ }
+  /** border: red 1px solid; */ }
 
 body {
   background-image: linear-gradient(133deg, black 0%, #343027 50%, black 100%); }
@@ -33,8 +33,7 @@ a {
   text-decoration: none; }
 
 p {
-  font-family: "Arial", sans-serif;
-  font-size: 1rem; }
+  font-family: "Arial", sans-serif; }
 
 /** -----LAYOUT----- */
 /** Header */
@@ -290,41 +289,38 @@ p {
 
 /* seccion nuestros programas */
 .container-5 {
-  width: 100%;
-  height: 56.25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 3.125rem; }
   .container-5 .programas {
     width: 100%;
-    height: 93.75rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 6.25rem; }
+    gap: 4.375rem; }
     .container-5 .programas .card-5 {
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      text-align: center;
-      width: 18.75rem;
-      height: 18.75rem; }
+      text-align: center; }
+      .container-5 .programas .card-5 img {
+        width: 100%; }
       .container-5 .programas .card-5 h3 {
         text-align: center;
         font-size: 2.5rem;
         color: #D6C59E;
-        padding: .625rem; }
+        padding: .625rem;
+        line-height: 2.5rem; }
 
 /* tu entrenador personal a un clic */
 .container-6 {
-  height: 50rem;
   justify-content: center;
   display: flex;
   padding: 50px;
-  gap: 12.5rem; }
+  gap: 6.25rem; }
   .container-6 .encabezado-2 {
-    width: 20%;
+    width: 600px;
     display: flex;
     flex-direction: column; }
     .container-6 .encabezado-2 h2 {
@@ -356,7 +352,8 @@ p {
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "x-1 x-2" "x-3 x-4";
     align-items: center;
-    justify-items: center; }
+    justify-items: center;
+    gap: 1.25rem; }
     .container-6 .sesiones .card-6 {
       width: 15.625rem;
       height: 15.625rem;
@@ -586,10 +583,15 @@ p {
     row-gap: 3.75rem; }
   .comunidad .card-3 p {
     font-size: 1rem; }
-  /* seccion nuestro equipo */
-  .equipo {
-    grid-template-areas: "x-1" "x-2" "x-3" "x-4" "x-5" "x-6";
-    margin-top: 1.875rem; } }
+  /* tu entrenador personal a un clic */
+  .container-6 .encabezado-2 h2 {
+    font-size: 3.75rem;
+    line-height: 3.75rem; }
+  .container-6 .encabezado-2 p {
+    font-size: 1rem; }
+  .container-6 {
+    flex-wrap: wrap;
+    gap: 3.125rem; } }
 
 /** MediaQ 768px*/
 @media (max-width: 768px) {
@@ -633,11 +635,11 @@ p {
   .background-inicio .main-title .btn-1 button {
     font-size: 1.25rem; }
   /* titulos de pagina */
-  header .main-title-2 h1 {
-    font-size: 5rem;
+  .main-title-2 h1 {
+    font-size: 4.375rem;
     line-height: 4.0625rem;
     margin-top: 6.25rem; }
-  header .main-title-2 p {
+  .main-title-2 p {
     font-size: 1.25rem; }
   /* Seccion nuestro enfoque */
   .encabezado h2 {
@@ -656,16 +658,34 @@ p {
     display: flex;
     flex-direction: column;
     text-align: center; }
-  .card-3 p {
-    width: 250px;
-    font-size: .75rem; }
+  .comunidad .card-3 p {
+    width: 15.625rem;
+    font-size: 1rem; }
   /* seccion nuestro equipo */
-  .equipo {
+  .container-4 {
+    padding: .625rem; }
+  .container-4 .equipo {
     grid-template-areas: "x-1" "x-2" "x-3" "x-4" "x-5" "x-6";
-    margin-top: 1.875rem; } }
+    margin-top: 1.875rem;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr)); }
+  /* seccion nuestro equipo */
+  .container-4 .equipo {
+    grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr)); }
+  /* seccion nuestros programas */
+  .container-5 .programas {
+    flex-wrap: wrap; }
+  /* tu entrenador personal a un clic */
+  .container-6 .sesiones {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "x-1" "x-2" "x-3"  "x-4"; }
+  .container-6 .sesiones .encabezado-2 h2 {
+    font-size: 3.75rem; } }
 
-/** MediaQ 320px*/
-@media (max-width: 320px) {
+/** MediaQ 425px*/
+@media (max-width: 425px) {
   /* Barra de navegacion */
   header {
     height: 25rem; }
@@ -692,12 +712,12 @@ p {
     font-size: .75rem;
     margin-top: 1.25rem; }
   /* titulos de pagina */
-  header .main-title-2 h1 {
-    font-size: 1.875rem;
-    line-height: 1.875rem;
+  .main-title-2 h1 {
+    font-size: 3.125rem;
+    line-height: 3.125rem;
     margin-top: 4.375rem; }
-  header .main-title-2 p {
-    font-size: .75rem;
+  .main-title-2 p {
+    font-size: 1rem;
     margin-bottom: .3125rem; }
   /* Seccion nuestro enfoque */
   .encabezado h2 {
@@ -726,24 +746,45 @@ p {
   /* seccion nuestra comunidad */
   .comunidad {
     grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr)); }
-  .card-3 {
+  .comunidad .card-3 {
     width: 12.5rem;
     display: flex;
     flex-direction: column;
     text-align: center; }
-  .card-3 h3 {
+  .comunidad .card-3 h3 {
     text-align: center; }
-  .card-3 h3 {
-    text-align: center; }
-  p {
-    width: 250px;
-    font-size: 3.125rem; }
+  .comunidad .card-3 p {
+    font-size: .75rem; }
   /* seccion nuestro equipo */
   .container-4 {
     padding: .625rem; }
-  .equipo {
+  .container-4 .equipo {
     grid-template-areas: "x-1" "x-2" "x-3" "x-4" "x-5" "x-6";
-    margin-top: 1.875rem; }
-  .equipo .card-4 {
+    margin-top: 1.875rem;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr)); }
+  .container-4 .equipo .card-4 {
+    display: flex;
     flex-direction: column;
-    width: 12.5rem; } }
+    width: 12.5rem; }
+  .container-4 .equipo .card-4 h3 {
+    font-size: 1.25rem; }
+  .container-4 .equipo .card-4 p {
+    font-size: .75rem; }
+  /* seccion nuestros programas */
+  .container-5 .programas {
+    flex-wrap: wrap; }
+  .container-5 .programas .card-5 h3 {
+    line-height: 1.875rem;
+    font-size: 1.875rem; }
+  .container-5 .programas .card-5 p {
+    font-size: 12px; }
+  /* tu entrenador personal a un clic */
+  .container-6 .encabezado-2 h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem; }
+  .container-6 .encabezado-2 p {
+    font-size: .75rem; }
+  /* seccion contactanos */
+  .contactanos form {
+    width: 15.625rem; } }

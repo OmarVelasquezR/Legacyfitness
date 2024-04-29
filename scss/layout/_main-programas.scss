@@ -11,31 +11,30 @@
 /* seccion nuestros programas */
 
 .container-5{
-    width: 100%;
-    height: 56.25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 3.125rem;
     .programas{
         width: 100%;
-        height: 93.75rem;
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 6.25rem;
+        gap: 4.375rem;
         .card-5{
+            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            width: 18.75rem;
-            height: 18.75rem;
+            img{
+                width: 100%;
+            }
             h3{
                 text-align: center;
                 font-size: 2.5rem;
                 color: #D6C59E;
                 padding: .625rem;
+                line-height: 2.5rem;
             }
         }
     }
@@ -44,13 +43,12 @@
 /* tu entrenador personal a un clic */
 
 .container-6{
-    height: 50rem;
     justify-content: center;
     display: flex;
     padding: 50px;
-    gap: 12.5rem;
+    gap: 6.25rem;
     .encabezado-2{
-        width:20%;
+        width:600px;
         display: flex;
         flex-direction: column;
         h2{
@@ -91,6 +89,7 @@
         ;
         align-items: center;
         justify-items: center;
+        gap: 1.25rem;
         .card-6{
             width: 15.625rem;
             height: 15.625rem;

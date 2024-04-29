@@ -69,13 +69,13 @@
 
     /* titulos de pagina */
 
-    header .main-title-2 h1{
-        font-size: 5rem;
+    .main-title-2 h1{
+        font-size: 4.375rem;
         line-height: 4.0625rem;
         margin-top: 6.25rem;
     }
 
-    header .main-title-2 p{
+    .main-title-2 p{
         font-size: 1.25rem;
     }
 
@@ -108,14 +108,18 @@
         text-align: center;
     }
 
-    .card-3 p{
-        width: 250px;
-        font-size: .75rem;
+    .comunidad .card-3 p{
+        width: 15.625rem;
+        font-size: 1rem;
     }
 
-    /* seccion nuestro equipo */
+        /* seccion nuestro equipo */
 
-    .equipo{
+    .container-4{
+        padding: .625rem;
+    }
+
+    .container-4 .equipo{
         grid-template-areas:
         "x-1"
         "x-2"
@@ -125,6 +129,37 @@
         "x-6"
         ;
         margin-top: 1.875rem;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
     }
 
+    /* seccion nuestro equipo */
+
+    .container-4 .equipo{
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+    }
+
+/* seccion nuestros programas */
+
+.container-5 .programas{
+    flex-wrap: wrap;
+}
+
+
+/* tu entrenador personal a un clic */
+
+.container-6 .sesiones{
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "x-1"
+    "x-2"
+    "x-3" 
+    "x-4"
+    ;
+}
+.container-6 .sesiones .encabezado-2 h2{
+    font-size: 3.75rem;
+}
 }
